@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: #EEEEEE;
+  background: #2A2A2A;
+  position: absolute;
+  width: 100%;
+  height: 100%;  
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.loading-text {
+  color: #383838;
+}
+
+.player-text {
+  font-size: 10rem;
+}
+
+.main-text {
+  font-size: 8rem;
+}
+
+.my-header {
+  background-color: #202020;
+  height: 90px;
+  border-radius: 20px;
+  width: 60%;
+  margin: auto;
+  margin-top: 30px;
+  padding: 2%;
+}
+
+.main-word {
+  font-size: xxx-large;
+  letter-spacing: .2rem;
+  font-weight: 500;
+}
+
+.header-a {
+  font-size: large;
+  letter-spacing: .1rem;
+  font-weight: 500;
+  font-family: "Bahnschrift";
+}
+
+.header-name {
+  margin: auto;
+  padding: 10px;
+  width: fit-content;
+  font-family: "Bahnschrift";
+  
+}
+
+header {
+  min-width: 750px;
+}
+
+.centered-div {
+  margin: auto;
+  width: 80%;
+}
+
+.center-div {
+  text-align: center;
+}
+
+.bah-bah {
+  font-family: 'Bahnschrift';
+}
+
+.centered-text {
+  display: flex;
+  font-family: "Bahnschrift";
+  align-items: center;
+  justify-content: center;
+  background-color: #2A2A2A;
+}
+
+.library-div {
+  margin:auto;
+  margin-top: 30px;
+  width: 100%;
+  height: 500px;
+  border-color: #AAA;
+  border-width: 4px;
+  border-radius: 20px;
+  background-color: #202020;
+}

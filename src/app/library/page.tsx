@@ -1,15 +1,10 @@
-import { PrismaClient } from "@prisma/client"
+
 import Link from "next/link"
 
-const prisma = new PrismaClient()
-
-async function getBooks() {
-    return await prisma.book.findMany()
-}
 
 //{books.map(book => (  ...  ))}
-export default async function library() {
-    const books = await getBooks()
+export default function library() {
+  
 
     return <div className="centered-div">
         <div className="library-div carousel carousel-vertical p-5 space-y-4 rounded-box">

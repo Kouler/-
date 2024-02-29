@@ -61,11 +61,7 @@ function parseText(text: string) {
 
 let words = parseText(text);
 
-export default function Player({item, params}:
-    {
-        item: string,
-        params: {productId: string}
-    })
+export default function Player()
 {   
     const [index, setIndex] = useState(0);
     const [isPlaying, setIsPlaying] = useState(false);
